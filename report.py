@@ -23,15 +23,15 @@ print('')
 print(Fore.CYAN + '          Critical Ops Report Bot by yin/who?')
 print('')
 print('')
-#userid = input(Back.BLACK + Fore.WHITE + "Enter UserID: ")
+userid = input(Back.BLACK + Fore.WHITE + "Enter UserID: ")
 #bearer cookie is each report
 #10 reports enough to ban new account for 2 days
 #30 reports enough to ban old account for 2 days
 while True:
     reports=[0,1,2]
-    auth="Bearer NzExNjUyNTE1OjM4MmExZDBhMTUwZjdhOWRkODM1YjNmMTJiYzdlZGE4OjY4MjYwMjY2ODoxMjE2NjgxODE4YTE0ZmE3NjYzODJlZmVlNTFhYzI2NjprQ2NBcmlORGpucVpvTGhkRElIR3ExMUMyYnVNeTlMaWhwV1FndG9rZkVPS2owMEU4RGRJQTBPNnBCSUJYT24vSXRLMzZ2ZHp3cFFOdTVlTlRXcTRXUT09"#bearer tokens/account auth cookies
+    auth=""#bearer tokens/account auth cookies
     rid = random.choice(reports)
-    data = {"userid":10467553,"reporttype":rid}
+    data = {"userid":userid,"reporttype":rid}
     headers = {
         'accept': '*/*',
         'content-type': 'application/json',
@@ -50,6 +50,5 @@ while True:
     else:
         print (Fore.RED + 'Error')
     
-#note from Timer1337: "play stupid games win stupid prizes :)
+
 #by yin/who?/timer/kevin
-#147895523
