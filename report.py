@@ -29,6 +29,8 @@ userid = input(Back.BLACK + Fore.WHITE + "Enter UserID: ")
 #30 reports enough to ban old account for 2 days
 while True:
     reports=[0,1,2]
+    userids=[user id of reported acc,user id of reported acc]
+    userid= random.choice(userids)
     auth=""#bearer tokens/account auth cookies
     rid = random.choice(reports)
     data = {"userid":userid,"reporttype":rid}
@@ -46,9 +48,15 @@ while True:
     url = "https://1-28-0.prod.copsapi.criticalforce.fi/api/user/report"
     res = requests.post(url,json=data,headers=headers)
     if res.status_code == 200:
-        print(Fore.GREEN + "Report sent!")
+        print(Fore.WHITE + "[" + Fore.MAGENTA + "+" + Fore.WHITE + "]" + Fore.MAGENTA + " Report sent!")
     else:
-        print (Fore.RED + 'Error')
+        print (Fore.RED + '[-] Error')
+    if res.text == "Error 251":
+        print(Fore.WHITE + "     " + "Report already sent.")
+    else:
+        print(Fore.WHITE + f"     Reported for {rid}")
     
 
+#note from Timer1337: "play stupid games win stupid prizes."
 #by yin/who?/timer/kevin
+#0 is hacking etc
