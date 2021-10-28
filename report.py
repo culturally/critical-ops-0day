@@ -27,10 +27,16 @@ userid = input(Back.BLACK + Fore.WHITE + "Enter UserID: ")
 #bearer cookie is each report
 #10 reports enough to ban new account for 2 days
 #30 reports enough to ban old account for 2 days
+r = requests.get("https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&timeout=200&country=all&ssl=all&anonymity=all")
+scrape = open('proxies.txt', 'wb')
+scrape.write(r.content)
 while True:
+    scrape = open("proxies.txt", "r")
+    proxy = random.choice(open('proxies.txt').readlines())
+    scrape.close
     reports=[0,1,2]
-    userids=[user id of reported acc,user id of reported acc]
-    userid= random.choice(userids)
+    #userids=[user id of reported acc,user id of reported acc] for mass reporting
+    #userid= random.choice(userids)
     auth=""#bearer tokens/account auth cookies
     rid = random.choice(reports)
     data = {"userid":userid,"reporttype":rid}
