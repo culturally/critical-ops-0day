@@ -7,5 +7,6 @@ Each "Token" is each account you can get them by logging requests when u play.
 # Proof
 Even temporary banned developer of the game 
 https://youtu.be/Yqv3GyL-KHQ
+![image](https://user-images.githubusercontent.com/70502697/139534188-0e7d7c89-6444-4862-a0b9-834081650d44.png)
 # Info
 28 Oct 2021 - developers disabled people getting banned after reports(still not patched people just will not get banned)
