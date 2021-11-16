@@ -15,3 +15,5 @@ https://youtu.be/Yqv3GyL-KHQ
 31 Oct 2021 - developer´s response: calls me an idiot because the thousands of dollars from fake sweepstakes isn´t enough to payout me money for breaking their game
 <br>
 ![image](https://user-images.githubusercontent.com/70502697/139597001-ef8c90d8-553d-4c68-80ed-63f33952e56b.png)
+<br>
+16 Nov 2021 - Accounts does not receive reports maybe you need to update the request(too lazy for that)
